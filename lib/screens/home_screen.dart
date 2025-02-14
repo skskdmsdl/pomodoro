@@ -31,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  // 시작 버튼
   void onStartPressed() {
     timer = Timer.periodic(
       Duration(seconds: 1),
@@ -41,6 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  // 일시정지 버튼
   void onPausePressed() {
     timer.cancel();
     setState(() {
@@ -48,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  // 초기화 버ㄴ
   void onResetPressed() {
     timer.cancel();
     setState(() {
